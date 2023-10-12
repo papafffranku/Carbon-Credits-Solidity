@@ -16,7 +16,7 @@ contract CarbonCreds is ERC20("CarbonCredits","CC"), Ownable(msg.sender) {
     function transferfn(address _from, address _to, uint256 _amount) public { //transfer function
         approve(_from, _amount);
         approve(_to, _amount);
-        transferFrom(_from, _to, _amount);
+        transferFrom(_from, _to, _amount);//Participant consesus => both parties approve the transaction
     }
 
     function Burn(address _account, uint256 _value)public onlyOwner{
