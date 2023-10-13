@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.20;
 
-contract SimpleStorage{//adding companies according to struct
+contract CompanyStorage{//adding companies according to struct
 
     string  CompanyName;
     uint256 Company_Reg_Number;
