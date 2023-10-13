@@ -16,9 +16,10 @@ contract EnglishAuction is CarbonCreds{ //carbon credit inherited from mint
     bool public auctionEnded;
 
     // Constructor to set the auctioneer and bidding duration
-    constructor(uint256 _biddingDuration) {
+    constructor(uint256 _biddingDuration, uint _CarbonCreditAmount) {
         auctioneer = msg.sender;
         biddingEndTime = block.timestamp + _biddingDuration;
+        Carbonamount=_CarbonCreditAmount;
     }
 
     function placeBid() public payable {
