@@ -10,7 +10,7 @@ contract CarbonCreds is ERC20("CarbonCredits","CC"), Ownable(msg.sender) {
 
 
     function mint(uint256 initialsupply) public onlyOwner {//onlyOwner states only contract owner can deploy mint function
-        _mint(msg.sender, initialsupply * 10 ** 8); //input is in WEI
+        _mint(msg.sender, initialsupply); 
     }
 
     function transferfn(address _from, address _to, uint256 _amount) public { //transfer function
